@@ -34,8 +34,6 @@ favoriteThings.book = "50 Shades of Gray";
 
 //NEXT PROBLEM
 
-
-
 /*Create an empty Object called backPack. Now, create a variable called 'item'
 and set it equal to the string 'firstPocket'. Using bracket notation,
 add a 'firstPocket' key (or property) to backPack, using 'item'.
@@ -46,9 +44,17 @@ that is named color, with the value being the color of your backpack. */
 
   //Code here
 
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = "chapstick";
+
+backPack.color = "green";
+
 //After you do the above, alert your entire backPack object.
 
   //Code here
+
+  alert(backPack);
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -56,22 +62,23 @@ Instead, console.log your whole backPack object and then check out the console. 
 
   //Code here
 
-
-
+console.log(backPack);
 
 //NEXT PROBLEM
-
-
-
 
 //Create another 'me' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
   //Code Here
 
+var me = {name: "Blake", age: 32, height: "5'7", gender: "M", married: "Yes", eyeColor: "brown", hairColor: "black"};
+
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
 
+for (key in me) {
+  alert(me[key]);
+}
 
 
 
