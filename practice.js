@@ -80,44 +80,53 @@ for (key in me) {
   alert(me[key]);
 }
 
-
-
 //NEXT PROBLEM
-
-
-
 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
   //Code Here
 
+var album = {
+            song1adf: "song1adf".length,
+            song2bfgdf: "song2bfgdf".length,
+            song3wereaadf: "song3wereaadf".length,
+            song4vbaqrgg: "song4vbaqrgg".length,
+            song5: "song5".length
+            }
+
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
 
-
-
+for(key in album) {
+  alert(key);
+}
 
 //NEXT PROBLEM
-
-
-
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   //Code Here
 
+var states = {
+                Utah: 19233,
+                California: 980234,
+                Arizona: 329442,
+                Nevada: 23933,
+                Florida: 559322
+  }
+
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
 
-
-
+for (key in states) {
+  if (states[key] > 30000) {
+    alert(key);
+  }
+}
 
 //NEXT PROBLEM
-
-
-
 
 var user = {
     name: 'Tyler McGinnis',
@@ -132,17 +141,23 @@ that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
 
+for (key in user) {
+  if(!user[key]) {
+    delete (user[key]);
+  }
+}
+
+ // if (user[key] === null || user[key] === undefined || user[key] ===NaN || user[key] === 0 || user[key] === false) {
+
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
 
-
-
+user.name = "Blake";
+user.pwHash = "thisPassword!";
+user.username = "blakehagen101";
 
 //NEXT PROBLEM
-
-
-
 
 var user = {
         name: 'Tyler McGinnis',
