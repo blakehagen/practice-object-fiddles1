@@ -198,12 +198,21 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+  methodCollection.alertHello = function() {
+    alert("Hello");
+  }
+
+  methodCollection.logHello = function() {
+    console.log("Hello");
+  }
+
 //Now call your alertHello and logHello methods.
 
   //Code Here
 
+methodCollection.alertHello();
 
-
+methodCollection.logHello();
 
 //NEXT PROBLEM
 
